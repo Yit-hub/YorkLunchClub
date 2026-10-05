@@ -1,0 +1,19 @@
+{
+  "name": "york-lunch-club",
+  "version": "1.0.0",
+  "private": true,
+  "description": "York Lunch Club Android app — npm test runner wrappers around Gradle",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:android",
+    "test:unit": "./gradlew :app:testDebugUnitTest",
+    "test:android": "./gradlew :app:connectedDebugAndroidTest",
+    "test:instrumentation": "./gradlew :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.yorklunchclub.app.ui.InstrumentationTests",
+    "test:integration": "./gradlew :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.yorklunchclub.app.ui.IntegrationTests",
+    "test:e2e": "./gradlew :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.yorklunchclub.app.ui.EndToEndTests",
+    "test:score": "./gradlew :app:testDebugUnitTest --tests 'com.yorklunchclub.app.utils.ScoreCalculatorTest'",
+    "test:register": "./gradlew :app:testDebugUnitTest --tests 'com.yorklunchclub.app.ui.screens.auth.RegisterViewModelTest'",
+    "test:all": "./gradlew :app:testDebugUnitTest :app:connectedDebugAndroidTest",
+    "build": "./gradlew :app:assembleDebug",
+    "clean": "./gradlew clean"
+  }
+}

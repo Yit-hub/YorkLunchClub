@@ -1,0 +1,13 @@
+{
+  "name": "ylc-seed",
+  "private": true,
+  "version": "1.0.0",
+  "description": "York Lunch Club Firestore seed script",
+  "scripts": {
+    "seed": "node seed-firestore.js",
+    "create-test-user": "node create-test-user.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.5.0"
+  }
+}

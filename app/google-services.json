@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "647276098026",
+    "project_id": "yorklunchclub",
+    "storage_bucket": "yorklunchclub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647276098026:android:16c0ab50e9a82fe16a0293",
+        "android_client_info": {
+          "package_name": "com.yorklunchclub.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC19BFZSBEOTnjeFMbaIb6WZgCJ3YcIjwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
